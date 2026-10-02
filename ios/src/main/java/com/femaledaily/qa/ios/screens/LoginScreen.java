@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static com.femaledaily.qa.constants.FrameworkConstants.EXPLICIT_WAIT;
+
 public class LoginScreen {
     
     private final IOSDriver driver;
@@ -22,7 +24,7 @@ public class LoginScreen {
     }
     
     public LoginScreen enterUsername(String username) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
         wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField)).sendKeys(username);
         return this;
     }
