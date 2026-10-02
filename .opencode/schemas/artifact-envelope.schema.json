@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "task_id",
+    "producer",
+    "status",
+    "data"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "producer": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object"
+    }
+  }
+}

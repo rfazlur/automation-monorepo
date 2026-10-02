@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Android Smoke Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.femaledaily.qa.listeners.TestListener"/>
+    </listeners>
+    
+    <test name="Android Smoke Tests">
+        <classes>
+            <class name="com.femaledaily.qa.android.tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>

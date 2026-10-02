@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "status",
+    "tests",
+    "evidence"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "pass",
+        "fail",
+        "blocked",
+        "partial"
+      ]
+    },
+    "tests": {
+      "type": "array"
+    },
+    "evidence": {
+      "type": "array"
+    }
+  }
+}
