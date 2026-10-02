@@ -2,13 +2,13 @@ package com.femaledaily.qa.android.flows;
 
 import com.femaledaily.qa.android.screens.HomeScreen;
 import com.femaledaily.qa.android.screens.LoginScreen;
-import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.WebDriver;
 
 public class LoginFlow {
     
-    private final AndroidDriver driver;
+    private final WebDriver driver;
     
-    public LoginFlow(AndroidDriver driver) {
+    public LoginFlow(WebDriver driver) {
         this.driver = driver;
     }
     

@@ -1,8 +1,8 @@
 package com.femaledaily.qa.android.screens;
 
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,11 +12,11 @@ import static com.femaledaily.qa.constants.FrameworkConstants.EXPLICIT_WAIT;
 
 public class HomeScreen {
     
-    private final AndroidDriver driver;
+    private final WebDriver driver;
     
     private final By welcomeMessage = AppiumBy.id("com.femaledaily.app:id/welcome_message");
     
-    public HomeScreen(AndroidDriver driver) {
+    public HomeScreen(WebDriver driver) {
         this.driver = driver;
     }
     

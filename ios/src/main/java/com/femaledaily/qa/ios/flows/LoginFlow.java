@@ -2,13 +2,13 @@ package com.femaledaily.qa.ios.flows;
 
 import com.femaledaily.qa.ios.screens.HomeScreen;
 import com.femaledaily.qa.ios.screens.LoginScreen;
-import io.appium.java_client.ios.IOSDriver;
+import org.openqa.selenium.WebDriver;
 
 public class LoginFlow {
     
-    private final IOSDriver driver;
+    private final WebDriver driver;
     
-    public LoginFlow(IOSDriver driver) {
+    public LoginFlow(WebDriver driver) {
         this.driver = driver;
     }
     

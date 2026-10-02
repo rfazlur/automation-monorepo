@@ -39,10 +39,14 @@ build/
 ### Mac OS ###
 .DS_Store
 
+### Test output ###
+logs/
+reports/
+allure-results/
+
 ### opencode ###
 .opencode
 AGENTS.md
 MANIFEST.json
 opencode.jsonc
 qa-automation-monorepo-architecture.md
-README.md

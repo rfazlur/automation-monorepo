@@ -1,8 +1,8 @@
 package com.femaledaily.qa.android.screens;
 
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,14 +12,14 @@ import static com.femaledaily.qa.constants.FrameworkConstants.EXPLICIT_WAIT;
 
 public class LoginScreen {
     
-    private final AndroidDriver driver;
+    private final WebDriver driver;
     
     private final By usernameField = AppiumBy.id("com.femaledaily.app:id/username");
     private final By passwordField = AppiumBy.id("com.femaledaily.app:id/password");
     private final By loginButton = AppiumBy.id("com.femaledaily.app:id/login_button");
     private final By errorMessage = AppiumBy.id("com.femaledaily.app:id/error_message");
     
-    public LoginScreen(AndroidDriver driver) {
+    public LoginScreen(WebDriver driver) {
         this.driver = driver;
     }
     
