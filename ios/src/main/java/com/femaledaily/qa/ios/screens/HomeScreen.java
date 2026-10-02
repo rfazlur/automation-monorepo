@@ -8,19 +8,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static com.femaledaily.qa.constants.FrameworkConstants.EXPLICIT_WAIT;
+
 public class HomeScreen {
     
     private final IOSDriver driver;
     
     private final By welcomeMessage = AppiumBy.accessibilityId("welcome_message");
-    private final By userProfile = AppiumBy.accessibilityId("user_profile");
     
     public HomeScreen(IOSDriver driver) {
         this.driver = driver;
     }
     
     public boolean isWelcomeMessageDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(welcomeMessage)).isDisplayed();
     }
     
